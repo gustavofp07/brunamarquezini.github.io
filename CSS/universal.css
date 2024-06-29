@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 16px;
+}
+
+#container {
+    background-color: rgb(211, 211, 211);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cabecalho"
+                         "corpo"
+                         "rodape";
+    grid-gap: 10px;
+}
+
+#cabecalho {
+    grid-area: cabecalho;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#corpo div {
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.500);
+    background-color: white;
+}
+
+#corpo a {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+#corpo a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+#rodape {
+    grid-area: rodape;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "linkA linkB";
+
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+#linkA {
+    grid-area: linkA;
+}
+
+#linkB {
+    grid-area: linkB;
+}
+
+#rodape a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#rodape a:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
